@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap');
+
+:root{
+    --font1: 'Poppins', sans-serif;
+    --font2: 'Oswald', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font1);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #eeeeff;
+}
+
+/* utility classes */
+.section-heading{
+    text-align: center;
+    padding: 20px 0;
+    color: #2e2e2e;
+    font-size: 2rem;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 61px;
+    padding: 0 15px;
+    width: 90vw;
+    margin: auto;
+}
+
+
+#logo h1{
+    font-family: var(--font2);
+    letter-spacing: 1px;
+    /* color: #2e2e2e; */
+    color: cornflowerblue;
+}
+
+#nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+#nav-list li{
+    font-size: 1rem;
+}
+
+#nav-list li a{
+    text-decoration: none;
+    color: #2e2e2e;
+    padding: 6px 20px;
+}
+
+#search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search input{
+    padding: 6px 10px;
+    border: 1px solid cornflowerblue;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+
+#search #nav-btn{
+    padding: 6px 10px;
+    border: 1px solid cornflowerblue;
+    border-radius: 4px;
+    color: cornflowerblue;
+    background-color: transparent;
+}
+
+#search #nav-btn:hover{
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+    color: #fff;
+}
+
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: none;
+}
+
+.menubar{
+    width: 28px;
+    height: 1px;
+    border: 1px solid #000;
+    border-radius: 1px;
+    margin: 2px 0;
+    background-color: #000;
+}
+
+/* home css */
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    width: 90vw;
+    margin: auto;
+}
+
+#home-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+#home-text .welcome{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #2e2e2e;
+}
+
+#home-text .name{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2e2e2e;
+}
+
+#home-text .name span{
+    color: cornflowerblue;
+}
+
+#home-text .job{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+#home-text .aboutme{
+    font-size: 1rem;
+    font-weight: 400;
+    color: slategrey;
+    padding: 4px 0;
+}
+
+span button{
+    padding: 6px 10px;
+    border: 2px solid cornflowerblue;
+    border-radius: 4px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+
+#cv-btn{
+    color: #fff;
+    background-color: cornflowerblue;
+}
+
+#home-btn{
+    background-color: transparent;
+    color: cornflowerblue;
+}
+
+#home-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+/* intro css */
+#intro{
+    width: 90vw;
+    margin: auto;
+}
+
+.about-heading{
+    padding: 10px 0;
+    color: #2e2e2e;
+}
+
+.about-about{
+    color: rgb(49, 49, 49);
+    padding-bottom: 10px;
+}
+
+#skill-container{
+    border: 2px solid cornflowerblue;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background-color: #e3edff;
+}
+
+#skill-container img{
+    width: 100px;
+    margin: 10px;
+}
+
+/* blog css */
+#blog{
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 90vw;
+}
+
+#blog-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#blog-heading a{
+    text-decoration: none;
+    color: #2e2e2e;
+}
+
+#blog-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* width: 80%; */
+    min-height: 100px;
+    border: 2px solid cornflowerblue;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(203, 222, 255);
+    width: 100%;
+}
+
+.card-heading{
+    padding-bottom: 4px;
+}
+
+.card-desc{
+    color: rgb(49, 49, 49);
+}
+
+/* contact css */
+#contact{
+    width: 90vw;
+    margin: auto;
+    margin-top: 70px;
+}
+#contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.row-left{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 20%;
+}
+
+.row-right{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+}
+
+.row-right input{
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid cornflowerblue;
+    border-radius: 4px;
+}
+
+.row-right textarea{
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid cornflowerblue;
+    border-radius: 4px;
+}
+
+.row-right #contact-btn{
+    padding: 6px 10px;
+    border: 1px solid cornflowerblue;
+    border-radius: 4px;
+    color: #fff;
+    background-color: cornflowerblue;
+}
+
+#footer{
+    height: 40px;
+    background-color: #b4cfff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer p{
+    color: #000;
+}
+
+#footer a{
+    text-decoration: none;
+}

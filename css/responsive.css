@@ -1,0 +1,131 @@
+@media screen and (max-width: 900px){
+    #menu{
+        display: inline;
+    }
+
+    #navbar{
+        background-color: white;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 50px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 45vw;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .active{
+        transform: translateX(-100vw);
+    }
+    #logo h1{
+        padding: 20px;
+    }
+
+    #nav-list{
+        flex-direction: column;
+    }
+
+    #nav-list li{
+        margin: 20px 0;
+    }
+
+    #search{
+        margin: 10px 0;
+    }
+
+    #home{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    #home-left{
+        width: 100%;
+    }
+
+    #home-right{
+        width: 100%;
+    }
+
+    form{
+        width: 60%;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .row-left{
+        width: 100%;
+    }
+
+    .row-left p{
+        padding: 5px 0;
+    }
+}
+
+@media screen and (max-width: 550px){
+    #navbar{
+        width: 60vw;
+    }
+
+    #search{
+        flex-direction: column;
+    }
+
+    #search input{
+        width: 80%;
+    }
+
+    #search #nav-btn{
+        margin: 10px 0;
+    }
+
+    #home-text .welcome{
+        font-size: 2.2rem;
+    }
+
+    #home-text .name{
+        font-size: 1.8rem;
+    }
+
+    #home-text .job{
+        font-size: 1.4rem;
+    }
+
+    #home-text .aboutme{
+        font-size: 1rem;
+    }
+
+    #home-right img{
+        width: 300px;
+    }
+
+    #skill-container{
+        justify-content: space-around;
+    }
+
+    .card{
+        width: 85%;
+    }
+
+    .post{
+        width: 85%;
+    }
+    
+    form{
+        width: 85%;
+    }
+
+    #footer{
+        height: auto;
+    }
+
+    #footer p{
+        color: #000;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
